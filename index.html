@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootCamp Widgets</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body>
+    <div x-data="greetingWidget">
+        <div class="greetingWidget">
+        <h1>Greeting Widget</h1>
+        <p>Enter Your Name: <input type="text" x-model="name"></p>
+        <p x-text="greeting"></p>
+        <button @click="greet">Greet</button>  
+        </div>
+    </div>
+    <div x-data="transportWidget">
+        <div class="transportWidget">
+        <h1>Transport Widget</h1>
+        <p>Enter Your Shift: <input type="text" x-model="time"></p>
+        <p x-text="message"></p>
+        <button @click="calculateFee">Check Fee</button>  
+        </div>
+    </div>
+    <div x-data="wordgameWidget">
+        <div class="wordgameWidget">
+            <h1>WordGame Widget</h1>
+            <p>Enter A Sentence: <input type="text" x-model="sentence"></p>
+            <p x-text="longestword"></p>
+            <p x-text="shortestword"></p>
+            <p>Sentence Letters:<span x-text="wordsLength"></span></p>
+            <button @click="longestWord">Check Longest Word</button>
+            <button @click="shortestWord">Check Shortest Word</button>
+        </div>
+    </div>
+    <div x-data="airtimeWidget">
+        <div class="airtimeWidget">
+            <h1>Airtime Widget</h1>
+            <p>Enter Airtime: <input type="text" x-model="airtimeAvailable">   Calls, Sms And Data: <input type="text" x-model="useString"></p>
+            <p x-text="balance"></p>
+            <button @click="enoughAirtime">Check If Airtime is Suffecient</button>
+        </div>
+    </div>
+
+    <script src="greet.js"></script>
+    <script src="transport.js"></script>
+    <script src="wordgame.js"></script>
+    <script src="airtime.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

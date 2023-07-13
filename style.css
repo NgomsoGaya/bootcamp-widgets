@@ -1,0 +1,28 @@
+.greetingWidget{
+    text-align: center;
+    border: 2px solid grey;
+    padding-bottom: 4%;
+    border-radius: 2%;
+    background-image: linear-Gradient(rgb(155, 231, 155), rgb(132, 132, 209));
+}
+.transportWidget{
+    text-align: center;
+    border: 2px solid grey;
+    padding-bottom: 4%;
+    border-radius: 2%;
+    background-image: linear-gradient(rgb(107, 173, 140), white);
+}
+.wordgameWidget{
+    text-align: center;
+    border: 2px solid grey;
+    padding-bottom: 4%;
+    border-radius: 2%;
+    background-image: linear-gradient(rgb(226, 226, 70), rgb(58, 56, 56))
+}
+.airtimeWidget{
+    text-align: center;
+    border: 2px solid grey;
+    padding-bottom: 4%;
+    border-radius: 2%;
+    background-image: linear-gradient(rgba(226, 70, 213, 0.863), rgb(178, 212, 84))
+}
